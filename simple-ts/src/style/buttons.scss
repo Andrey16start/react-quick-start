@@ -1,0 +1,28 @@
+.btn {
+  font-size: 13px;
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  background: #33aa7e;
+  border-radius: 100px;
+  padding: 12px;
+  transition: opacity 0.3s ease;
+  display: block;
+  position: relative;
+  overflow: hidden;
+
+  &:disabled {
+    background: #f5f6fa;
+    color: #afb2c1;
+    cursor: not-allowed;
+  }
+
+  &:hover:not(:disabled) {
+    opacity: 0.8;
+  }
+
+  &--reverse {
+    color: #33aa7e;
+    background-color: #fff;
+  }
+}

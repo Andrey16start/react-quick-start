@@ -1,0 +1,38 @@
+.spinner {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 2px solid black;
+  border-right-color: transparent !important;
+  border-radius: 50%;
+  animation: spinner 0.75s linear infinite;
+
+  &--black {
+    border-color: black;
+  }
+
+  &--red {
+    border-color: #ff3366;
+  }
+
+  &--green {
+    border-color: #33aa7e;
+  }
+
+  &--yellow {
+    border-color: #fbbc06;
+  }
+
+  &--blue {
+    border-color: #6e99bc;
+  }
+}
+
+@keyframes spinner {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
